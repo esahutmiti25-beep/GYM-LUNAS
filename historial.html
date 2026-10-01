@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Historial | Lunas Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-historial">
+
+    <!-- Encabezado -->
+
+    <header class="header-perfil">
+
+        <a href="perfil.html" class="logo-perfil">
+            LUNAS GYM
+        </a>
+
+        <a href="perfil.html" class="volver-perfil">
+            ← Volver al perfil
+        </a>
+
+    </header>
+
+
+    <!-- Contenido -->
+
+    <main class="contenido-historial">
+
+        <section class="encabezado-historial">
+
+            <div>
+
+                <p class="subtitulo-perfil">
+                    ACTIVIDAD
+                </p>
+
+                <h1>Historial de entrenamientos</h1>
+
+                <p class="descripcion-historial">
+                    Consulta todos los entrenamientos que has registrado.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Estadísticas -->
+
+        <section class="estadisticas-historial">
+
+            <div class="estadistica-historial">
+
+                <span>Entrenamientos</span>
+
+                <strong id="totalEntrenamientos">
+                    0
+                </strong>
+
+                <p>Registrados</p>
+
+            </div>
+
+
+            <div class="estadistica-historial">
+
+                <span>Tiempo entrenado</span>
+
+                <strong id="tiempoTotal">
+                    0 h
+                </strong>
+
+                <p>Tiempo acumulado</p>
+
+            </div>
+
+
+            <div class="estadistica-historial">
+
+                <span>Series completadas</span>
+
+                <strong id="totalSeries">
+                    0
+                </strong>
+
+                <p>En total</p>
+
+            </div>
+
+
+            <div class="estadistica-historial">
+
+                <span>Volumen total</span>
+
+                <strong id="volumenTotal">
+                    0 kg
+                </strong>
+
+                <p>Peso × repeticiones</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Historial -->
+
+        <section class="seccion-lista-historial">
+
+            <div class="titulo-lista-historial">
+
+                <h2>Entrenamientos</h2>
+
+                <a href="entrenamiento.html" class="boton-perfil">
+                    + Nuevo entrenamiento
+                </a>
+
+            </div>
+
+
+            <div id="listaHistorial">
+            </div>
+
+
+            <!-- Aparece cuando no hay entrenamientos -->
+
+            <div
+                class="historial-vacio oculto"
+                id="historialVacio">
+
+                <div class="icono-historial">
+                    🏋️
+                </div>
+
+                <h2>
+                    Todavía no tienes entrenamientos
+                </h2>
+
+                <p>
+                    Inicia tu primer entrenamiento para comenzar
+                    a registrar tu progreso.
+                </p>
+
+                <a
+                    href="entrenamiento.html"
+                    class="boton-perfil">
+
+                    Iniciar entrenamiento
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Modal de detalles -->
+
+    <div
+        class="modal-historial oculto"
+        id="modalHistorial">
+
+        <div class="modal-historial-contenido">
+
+            <div class="modal-header">
+
+                <div>
+
+                    <p class="subtitulo-perfil">
+                        ENTRENAMIENTO
+                    </p>
+
+                    <h2 id="modalNombre">
+                        Rutina
+                    </h2>
+
+                    <p
+                        class="fecha-modal"
+                        id="modalFecha">
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="cerrar-modal"
+                    id="cerrarHistorial">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="resumen-modal-entrenamiento"
+                id="resumenModal">
+            </div>
+
+
+            <div id="detalleEjercicios">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/historial.js"></script>
+
+</body>
+
+</html>

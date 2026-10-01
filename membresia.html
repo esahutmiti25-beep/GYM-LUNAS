@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Membresía | Lunas Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-membresia">
+
+    <!-- Encabezado -->
+
+    <header class="header-perfil">
+
+        <a href="perfil.html" class="logo-perfil">
+            LUNAS GYM
+        </a>
+
+        <a href="perfil.html" class="volver-perfil">
+            ← Volver al perfil
+        </a>
+
+    </header>
+
+
+    <main class="contenido-membresia">
+
+        <!-- Título -->
+
+        <section class="encabezado-membresia">
+
+            <p class="subtitulo-perfil">
+                MI PLAN
+            </p>
+
+            <h1>Mi membresía</h1>
+
+            <p>
+                Consulta tu plan actual y administra
+                tu membresía de Lunas Gym.
+            </p>
+
+        </section>
+
+
+        <!-- Membresía actual -->
+
+        <section class="membresia-actual">
+
+            <div class="cabecera-plan-actual">
+
+                <div>
+
+                    <span class="estado-plan">
+                        ● MEMBRESÍA ACTIVA
+                    </span>
+
+                    <h2 id="nombrePlanActual">
+                        Plan mensual
+                    </h2>
+
+                    <p id="descripcionPlanActual">
+                        Acceso completo al gimnasio durante todo el mes.
+                    </p>
+
+                </div>
+
+
+                <div class="precio-plan-actual">
+
+                    <strong id="precioPlanActual">
+                        $400
+                    </strong>
+
+                    <span id="periodoPlanActual">
+                        / mes
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="datos-plan">
+
+                <div>
+
+                    <span>Estado</span>
+
+                    <strong class="texto-activo">
+                        Activa
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Fecha de inicio</span>
+
+                    <strong id="fechaInicio">
+                        30 SEP 2026
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Próxima renovación</span>
+
+                    <strong id="fechaRenovacion">
+                        30 OCT 2026
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Método de pago</span>
+
+                    <strong>
+                        No configurado
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Planes -->
+
+        <section class="seccion-planes">
+
+            <div class="titulo-planes">
+
+                <p class="subtitulo-perfil">
+                    PLANES
+                </p>
+
+                <h2>Planes disponibles</h2>
+
+                <p>
+                    Selecciona el plan que mejor se adapte
+                    a tu entrenamiento.
+                </p>
+
+            </div>
+
+
+            <div class="planes-membresia">
+
+                <!-- Visita -->
+
+                <article
+                    class="plan-membresia"
+                    data-plan="visita">
+
+                    <span class="tipo-plan">
+                        VISITA
+                    </span>
+
+                    <h3>Acceso por día</h3>
+
+                    <div class="precio-plan">
+                        $50
+                    </div>
+
+                    <p class="descripcion-plan">
+                        Ideal para entrenar un solo día
+                        sin contratar una membresía.
+                    </p>
+
+
+                    <ul>
+
+                        <li>✓ Acceso completo por un día</li>
+
+                        <li>✓ Área de pesas</li>
+
+                        <li>✓ Área de cardio</li>
+
+                        <li>✓ Uso de instalaciones</li>
+
+                    </ul>
+
+
+                    <button
+                        type="button"
+                        class="boton-elegir-plan"
+                        onclick="seleccionarPlan('visita')">
+
+                        Elegir plan
+
+                    </button>
+
+                </article>
+
+
+                <!-- Mensual -->
+
+                <article
+                    class="plan-membresia plan-destacado"
+                    data-plan="mensual">
+
+                    <div class="recomendado">
+                        MÁS POPULAR
+                    </div>
+
+                    <span class="tipo-plan">
+                        MENSUAL
+                    </span>
+
+                    <h3>Plan mensual</h3>
+
+                    <div class="precio-plan">
+                        $400
+                    </div>
+
+                    <p class="descripcion-plan">
+                        Acceso completo al gimnasio
+                        durante todo el mes.
+                    </p>
+
+
+                    <ul>
+
+                        <li>✓ Acceso durante 30 días</li>
+
+                        <li>✓ Área de pesas</li>
+
+                        <li>✓ Área de cardio</li>
+
+                        <li>✓ Rutinas y seguimiento</li>
+
+                    </ul>
+
+
+                    <button
+                        type="button"
+                        class="boton-elegir-plan"
+                        onclick="seleccionarPlan('mensual')">
+
+                        Plan actual
+
+                    </button>
+
+                </article>
+
+
+                <!-- Trimestral -->
+
+                <article
+                    class="plan-membresia"
+                    data-plan="trimestral">
+
+                    <span class="tipo-plan">
+                        TRIMESTRAL
+                    </span>
+
+                    <h3>Plan trimestral</h3>
+
+                    <div class="precio-plan">
+                        $1000
+                    </div>
+
+                    <p class="descripcion-plan">
+                        Tres meses de acceso con un
+                        precio especial.
+                    </p>
+
+
+                    <ul>
+
+                        <li>✓ Acceso durante 90 días</li>
+
+                        <li>✓ Área de pesas</li>
+
+                        <li>✓ Área de cardio</li>
+
+                        <li>✓ Rutinas y seguimiento</li>
+
+                    </ul>
+
+
+                    <button
+                        type="button"
+                        class="boton-elegir-plan"
+                        onclick="seleccionarPlan('trimestral')">
+
+                        Elegir plan
+
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Información -->
+
+        <section class="info-renovacion">
+
+            <div>
+
+                <h3>Renovación de membresía</h3>
+
+                <p>
+                    Actualmente esta sección funciona como
+                    demostración. Los pagos y renovaciones
+                    automáticas se implementarán posteriormente.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/membresia.js"></script>
+
+</body>
+
+</html>

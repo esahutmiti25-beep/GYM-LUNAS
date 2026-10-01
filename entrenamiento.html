@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrenamiento | Lunas Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-entrenamiento">
+
+    <!-- Encabezado -->
+
+    <header class="header-perfil">
+
+        <a href="perfil.html" class="logo-perfil">
+            LUNAS GYM
+        </a>
+
+        <a href="perfil.html" class="volver-perfil">
+            ← Volver al perfil
+        </a>
+
+    </header>
+
+
+    <!-- Seleccionar rutina -->
+
+    <main class="contenido-entrenamiento">
+
+        <section
+            class="seleccionar-entrenamiento"
+            id="pantallaSeleccion">
+
+
+            <p class="subtitulo-perfil">
+                ENTRENAMIENTO
+            </p>
+
+            <h1>Iniciar entrenamiento</h1>
+
+            <p class="descripcion-entrenamiento">
+                Selecciona una de tus rutinas para comenzar.
+            </p>
+
+
+            <div
+                class="rutinas-entrenamiento"
+                id="rutinasEntrenamiento">
+            </div>
+
+
+            <div
+                class="sin-rutinas-entrenamiento oculto"
+                id="sinRutinasEntrenamiento">
+
+                <h2>No tienes rutinas guardadas</h2>
+
+                <p>
+                    Primero necesitas crear una rutina.
+                </p>
+
+                <a
+                    href="rutinas.html"
+                    class="boton-perfil">
+
+                    Crear rutina
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Entrenamiento activo -->
+
+        <section
+            class="entrenamiento-activo oculto"
+            id="pantallaEntrenamiento">
+
+
+            <div class="cabecera-entrenamiento-activo">
+
+                <div>
+
+                    <p class="subtitulo-perfil">
+                        ENTRENAMIENTO ACTIVO
+                    </p>
+
+                    <h1 id="nombreEntrenamiento">
+                        Rutina
+                    </h1>
+
+                </div>
+
+
+                <div class="tiempo-entrenamiento">
+
+                    <span>TIEMPO</span>
+
+                    <strong id="cronometro">
+                        00:00:00
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Ejercicios -->
+
+            <div id="ejerciciosEntrenamiento">
+            </div>
+
+
+            <!-- Finalizar -->
+
+            <div class="acciones-entrenamiento">
+
+                <button
+                    type="button"
+                    class="boton-cancelar-entrenamiento"
+                    id="cancelarEntrenamiento">
+
+                    Cancelar entrenamiento
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="boton-finalizar"
+                    id="finalizarEntrenamiento">
+
+                    Finalizar entrenamiento
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/entrenamiento.js"></script>
+
+</body>
+
+</html>

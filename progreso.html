@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Progreso | Lunas Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-progreso">
+
+    <!-- Encabezado -->
+
+    <header class="header-perfil">
+
+        <a href="perfil.html" class="logo-perfil">
+            LUNAS GYM
+        </a>
+
+        <a href="perfil.html" class="volver-perfil">
+            ← Volver al perfil
+        </a>
+
+    </header>
+
+
+    <main class="contenido-progreso">
+
+        <!-- Título -->
+
+        <section class="encabezado-progreso">
+
+            <p class="subtitulo-perfil">
+                ESTADÍSTICAS
+            </p>
+
+            <h1>Mi progreso</h1>
+
+            <p>
+                Analiza tu actividad y observa cómo
+                avanzan tus entrenamientos.
+            </p>
+
+        </section>
+
+
+        <!-- Estadísticas generales -->
+
+        <section class="resumen-progreso">
+
+            <div class="estadistica-progreso">
+
+                <span>Entrenamientos</span>
+
+                <strong id="progresoEntrenamientos">
+                    0
+                </strong>
+
+                <p>Total registrados</p>
+
+            </div>
+
+
+            <div class="estadistica-progreso">
+
+                <span>Tiempo entrenado</span>
+
+                <strong id="progresoTiempo">
+                    0 h
+                </strong>
+
+                <p>Tiempo acumulado</p>
+
+            </div>
+
+
+            <div class="estadistica-progreso">
+
+                <span>Series completadas</span>
+
+                <strong id="progresoSeries">
+                    0
+                </strong>
+
+                <p>Total realizadas</p>
+
+            </div>
+
+
+            <div class="estadistica-progreso">
+
+                <span>Volumen total</span>
+
+                <strong id="progresoVolumen">
+                    0 kg
+                </strong>
+
+                <p>Peso × repeticiones</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Actividad reciente -->
+
+        <section class="bloque-progreso">
+
+            <div class="titulo-bloque-progreso">
+
+                <div>
+
+                    <p class="subtitulo-perfil">
+                        ACTIVIDAD
+                    </p>
+
+                    <h2>Últimos entrenamientos</h2>
+
+                </div>
+
+                <a
+                    href="historial.html"
+                    class="boton-secundario">
+
+                    Ver historial
+
+                </a>
+
+            </div>
+
+
+            <div
+                class="actividad-progreso"
+                id="actividadProgreso">
+
+            </div>
+
+        </section>
+
+
+        <!-- Récords -->
+
+        <section class="bloque-progreso">
+
+            <div class="titulo-bloque-progreso">
+
+                <div>
+
+                    <p class="subtitulo-perfil">
+                        FUERZA
+                    </p>
+
+                    <h2>Récords por ejercicio</h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="records-grid"
+                id="recordsEjercicios">
+
+            </div>
+
+        </section>
+
+
+        <!-- Progreso por ejercicio -->
+
+        <section class="bloque-progreso">
+
+            <div class="titulo-bloque-progreso">
+
+                <div>
+
+                    <p class="subtitulo-perfil">
+                        EVOLUCIÓN
+                    </p>
+
+                    <h2>Progreso por ejercicio</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="selector-ejercicio">
+
+                <label for="seleccionarEjercicio">
+                    Ejercicio
+                </label>
+
+                <select id="seleccionarEjercicio">
+
+                    <option value="">
+                        Selecciona un ejercicio
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                class="detalle-progreso-ejercicio oculto"
+                id="detalleProgresoEjercicio">
+
+                <div class="resumen-ejercicio-progreso">
+
+                    <div>
+
+                        <span>Mejor peso</span>
+
+                        <strong id="mejorPeso">
+                            0 kg
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Mejor volumen</span>
+
+                        <strong id="mejorVolumenEjercicio">
+                            0 kg
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Veces entrenado</span>
+
+                        <strong id="vecesEntrenado">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tabla-progreso">
+
+                    <div class="cabecera-tabla-progreso">
+
+                        <span>Fecha</span>
+
+                        <span>Mejor peso</span>
+
+                        <span>Volumen</span>
+
+                        <span>Series</span>
+
+                    </div>
+
+
+                    <div id="historialEjercicio">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sin datos -->
+
+            <div
+                class="sin-progreso oculto"
+                id="sinProgreso">
+
+                <h3>
+                    Todavía no hay suficientes datos
+                </h3>
+
+                <p>
+                    Completa entrenamientos para comenzar
+                    a registrar tu progreso.
+                </p>
+
+                <a
+                    href="entrenamiento.html"
+                    class="boton-perfil">
+
+                    Entrenar
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/progreso.js"></script>
+
+</body>
+
+</html>

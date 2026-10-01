@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Perfil | Lunas Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-perfil">
+
+    <!-- Barra superior -->
+
+    <header class="header-perfil">
+
+        <a href="index.html" class="logo-perfil">
+            LUNAS GYM
+        </a>
+
+        <div class="usuario-header">
+            <span id="nombreHeader">
+                Usuario
+            </span>
+
+            <div class="avatar" id="avatarUsuario">
+                U
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="panel-perfil">
+
+        <!-- Menú lateral -->
+
+        <aside class="menu-perfil">
+
+            <nav>
+
+                <a href="#resumen" class="menu-activo">
+                    🏠 Inicio
+                </a>
+
+                <a href="entrenamiento.html">
+                    🏋️ Entrenar
+                </a>
+
+                <a href="rutinas.html">
+                    📋 Rutinas
+                </a>
+
+                <a href="historial.html">
+                    📅 Historial
+                </a>
+
+                <a href="progreso.html">
+                    📈 Progreso
+                </a>
+
+                <a href="membresia.html">
+                    💳 Membresía
+                </a>
+
+                <a href="ajustes.html">
+                    ⚙️ Ajustes
+                </a>
+
+            </nav>
+
+            <a href="index.html" class="cerrar-sesion">
+                Cerrar sesión
+            </a>
+
+        </aside>
+
+
+        <!-- Contenido -->
+
+        <main class="contenido-perfil">
+
+
+            <!-- Inicio -->
+
+            <section id="resumen" class="seccion-perfil">
+
+                <p class="saludo">
+                    MI PERFIL
+                </p>
+
+                <h1>
+                    Bienvenido,
+                    <span id="nombreBienvenida">
+                        Usuario
+                    </span>
+                </h1>
+
+                <p class="descripcion-perfil">
+                    Continúa trabajando para alcanzar tus objetivos.
+                </p>
+
+                <div class="resumen-perfil">
+
+    <div class="tarjeta-resumen">
+
+        <span>Entrenamientos</span>
+
+        <strong id="resumenEntrenamientos">
+            0
+        </strong>
+
+        <p>Registrados</p>
+
+    </div>
+
+
+    <div class="tarjeta-resumen">
+
+        <span>Tiempo entrenado</span>
+
+        <strong id="resumenTiempo">
+            0 h
+        </strong>
+
+        <p>Tiempo acumulado</p>
+
+    </div>
+
+
+    <div class="tarjeta-resumen">
+
+        <span>Rutinas</span>
+
+        <strong id="resumenRutinas">
+            0
+        </strong>
+
+        <p>Guardadas</p>
+
+    </div>
+
+
+    <div class="tarjeta-resumen">
+
+        <span>Membresía</span>
+
+        <strong
+            class="estado-activo"
+            id="resumenMembresia">
+
+            ACTIVA
+
+        </strong>
+
+        <p id="resumenPlan">
+            Mensual
+        </p>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- Entrenar -->
+
+            <section id="entrenar" class="seccion-perfil">
+
+                <div class="encabezado-seccion-perfil">
+
+                    <div>
+
+                        <p class="subtitulo-perfil">
+                            ENTRENAMIENTO
+                        </p>
+
+                        <h2>
+                            ¿Listo para entrenar?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="entrenamiento-principal">
+
+                <div id="proximaRutinaPerfil">
+
+                    <!-- JavaScript mostrará aquí una rutina guardada -->
+
+                </div>
+
+
+                <a href="entrenamiento.html" class="boton-perfil">
+                    Iniciar entrenamiento
+                </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Rutinas -->
+
+            <section id="rutinas" class="seccion-perfil">
+
+                <div class="encabezado-seccion-perfil">
+
+                    <div>
+
+                        <p class="subtitulo-perfil">
+                            MIS RUTINAS
+                        </p>
+
+                        <h2>Rutinas guardadas</h2>
+
+                    </div>
+
+
+                    <a href="rutinas.html" class="boton-secundario">
+                        + Crear rutina
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="contenedor-rutinas"
+                    id="rutinasPerfil">
+
+                    <!-- JavaScript mostrará aquí  las rutinas reales -->
+
+                </div>
+
+            </section>
+
+
+            <!-- Historial -->
+
+            <section id="historial" class="seccion-perfil">
+
+                <div class="encabezado-seccion-perfil">
+
+                    <div>
+
+                        <p class="subtitulo-perfil">
+                            ACTIVIDAD
+                        </p>
+
+                        <h2>
+                            Entrenamientos recientes
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="historial-entrenamientos"
+                    id="entrenamientosRecientes">
+
+                <!-- Aquí aparecerán automáticamente los entrenamientos reales -->
+
+                </div>
+
+                <div class="ver-historial-completo">
+
+                    <a
+                        href="historial.html"
+                        class="boton-secundario">
+
+                        Ver historial completo
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Progreso -->
+
+            <section id="progreso" class="seccion-perfil">
+
+                <div class="encabezado-seccion-perfil">
+
+                    <div>
+
+                        <p class="subtitulo-perfil">
+                            ESTADÍSTICAS
+                        </p>
+
+                        <h2>Mi progreso</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progreso-grid">
+
+    <div class="tarjeta-progreso">
+
+        <p>Entrenamientos</p>
+
+        <h3 id="progresoEntrenamientosPerfil">
+            0
+        </h3>
+
+        <span>Total registrados</span>
+
+    </div>
+
+
+    <div class="tarjeta-progreso">
+
+        <p>Series completadas</p>
+
+        <h3 id="progresoSeriesPerfil">
+            0
+        </h3>
+
+        <span>Total realizadas</span>
+
+    </div>
+
+
+    <div class="tarjeta-progreso">
+
+        <p>Volumen acumulado</p>
+
+        <h3 id="progresoVolumenPerfil">
+            0 kg
+        </h3>
+
+        <span>Peso × repeticiones</span>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <!-- Membresía -->
+
+            <section id="membresia" class="seccion-perfil">
+
+                <div class="encabezado-seccion-perfil">
+
+                    <div>
+
+                        <p class="subtitulo-perfil">
+                            MI PLAN
+                        </p>
+
+                        <h2>Membresía</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tarjeta-membresia-perfil">
+
+
+                    <div>
+
+                        <span
+                            class="estado-membresia"
+                            id="estadoMembresiaPerfil">
+
+                            ● MEMBRESÍA ACTIVA
+
+                        </span>
+
+                        <h3 id="planMembresiaPerfil">
+                            Plan mensual
+                        </h3>
+
+                        <p id="descripcionMembresiaPerfil">
+                            Acceso completo a Lunas Gym.
+                        </p>
+
+                    </div>
+
+
+                    <div class="datos-membresia">
+
+                        <div>
+
+                            <span>Próxima renovación</span>
+
+                            <strong id="renovacionMembresiaPerfil">
+        -
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Precio</span>
+
+                            <strong id="precioMembresiaPerfil">
+                                $0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="membresia.html" class="boton-secundario">
+                        Administrar membresía
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+    <script src="js/perfil.js"></script>
+
+</body>
+
+</html>

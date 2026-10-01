@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis Rutinas | Lunas Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-rutinas">
+
+    <!-- Encabezado -->
+
+    <header class="header-perfil">
+
+        <a href="perfil.html" class="logo-perfil">
+            LUNAS GYM
+        </a>
+
+        <a href="perfil.html" class="volver-perfil">
+            ← Volver al perfil
+        </a>
+
+    </header>
+
+
+    <!-- Contenido -->
+
+    <main class="contenido-rutinas">
+
+        <div class="encabezado-rutinas">
+
+            <div>
+                <p class="subtitulo-perfil">
+                    ENTRENAMIENTO
+                </p>
+
+                <h1>Mis rutinas</h1>
+
+                <p>
+                    Crea y organiza tus entrenamientos.
+                </p>
+            </div>
+
+            <button
+                type="button"
+                class="boton-perfil"
+                id="botonNuevaRutina">
+
+                + Crear rutina
+
+            </button>
+
+        </div>
+
+
+        <!-- Rutinas guardadas -->
+
+        <section>
+
+            <h2>Rutinas guardadas</h2>
+
+            <div
+                class="lista-rutinas"
+                id="listaRutinas">
+
+                <div class="sin-rutinas" id="sinRutinas">
+
+                    <h3>Todavía no tienes rutinas</h3>
+
+                    <p>
+                        Crea tu primera rutina para comenzar
+                        a registrar tus entrenamientos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Ventana para crear rutina -->
+
+    <div class="modal-rutina oculto" id="modalRutina">
+
+        <div class="modal-contenido">
+
+            <div class="modal-header">
+
+                <div>
+                    <p class="subtitulo-perfil">
+                        NUEVA RUTINA
+                    </p>
+
+                    <h2>Crear rutina</h2>
+                </div>
+
+                <button
+                    type="button"
+                    class="cerrar-modal"
+                    id="cerrarModal">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <!-- Nombre -->
+
+            <div class="campo-rutina">
+
+                <label for="nombreRutina">
+                    Nombre de la rutina
+                </label>
+
+                <input
+                    type="text"
+                    id="nombreRutina"
+                    placeholder="Ej. Push, Pull, Pierna">
+
+            </div>
+
+
+            <!-- Ejercicios -->
+
+            <div class="titulo-ejercicios">
+
+                <h3>Ejercicios</h3>
+
+                <button
+                    type="button"
+                    id="agregarEjercicio"
+                    class="boton-secundario">
+
+                    + Agregar ejercicio
+
+                </button>
+
+            </div>
+
+
+            <div id="listaEjercicios">
+
+                <!-- Ejercicio inicial -->
+
+                <div class="ejercicio-rutina">
+
+                    <div class="campo-ejercicio nombre-ejercicio">
+
+                        <label>
+                            Ejercicio
+                        </label>
+
+                        <input
+                            type="text"
+                            class="nombreEjercicio"
+                            placeholder="Ej. Press banca">
+
+                    </div>
+
+
+                    <div class="campo-ejercicio">
+
+                        <label>
+                            Series
+                        </label>
+
+                        <input
+                            type="number"
+                            class="seriesEjercicio"
+                            value="3"
+                            min="1">
+
+                    </div>
+
+
+                    <div class="campo-ejercicio">
+
+                        <label>
+                            Repeticiones
+                        </label>
+
+                        <input
+                            type="number"
+                            class="repeticionesEjercicio"
+                            value="10"
+                            min="1">
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="eliminar-ejercicio">
+
+                        ×
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Botones -->
+
+            <div class="acciones-rutina">
+
+                <button
+                    type="button"
+                    class="boton-cancelar"
+                    id="cancelarRutina">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    type="button"
+                    class="boton-perfil"
+                    id="guardarRutina">
+
+                    Guardar rutina
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/rutinas.js"></script>
+
+</body>
+
+</html>
